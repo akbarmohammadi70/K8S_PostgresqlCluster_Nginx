@@ -459,9 +459,6 @@ This command removes all the Kubernetes components associated with the chart and
 
 You have successfully deployed a PostgreSQL cluster on Kubernetes with Helm. The cluster includes 3 replicas with automatic failover, data persistence using hostPath, and scheduled backups. Customize the configuration as needed to fit your requirements.
 
-
-Here's a README file in English to guide users on how to set up and deploy the Helm chart for Nginx with the specified configuration:
-
 ---
 
 # Nginx Deployment Helm Chart
