@@ -506,7 +506,7 @@ service:
 
 ## Usage
 
-After the chart is installed, you can access Nginx via the NodePort. Assuming the node IP is `192.168.49.2`, you can make a request to Nginx:
+After the chart is installed, you can access Nginx via the NodePort. Assuming the node IP is `192.168.61.14`, you can make a request to Nginx:
 
 ```bash
 curl http://192.168.61.14:30080/ -i
