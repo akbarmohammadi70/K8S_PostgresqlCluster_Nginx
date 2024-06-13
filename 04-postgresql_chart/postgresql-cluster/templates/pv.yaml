@@ -1,0 +1,74 @@
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ include "postgresql-cluster.fullname" . }}-pv-0
+spec:
+  capacity:
+    storage: {{ .Values.persistence.size }}
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: {{ .Values.persistence.hostPath }}-0
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ include "postgresql-cluster.fullname" . }}-pv-1
+spec:
+  capacity:
+    storage: {{ .Values.persistence.size }}
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: {{ .Values.persistence.hostPath }}-1
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ include "postgresql-cluster.fullname" . }}-pv-2
+spec:
+  capacity:
+    storage: {{ .Values.persistence.size }}
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: {{ .Values.persistence.hostPath }}-2
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ include "postgresql-cluster.fullname" . }}-pv-3
+spec:
+  capacity:
+    storage: {{ .Values.persistence.size }}
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: {{ .Values.persistence.hostPath }}-3
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ include "postgresql-cluster.fullname" . }}-pv-4
+spec:
+  capacity:
+    storage: {{ .Values.persistence.size }}
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: {{ .Values.persistence.hostPath }}-4
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ include "postgresql-cluster.fullname" . }}-backup-pv
+spec:
+  capacity:
+    storage: {{ .Values.backup.storage.size }}
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: {{ .Values.persistence.hostPath }}-10
