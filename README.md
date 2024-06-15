@@ -17,8 +17,8 @@ Before starting the installation, ensure that your systems meet the following re
 First, clone the Kubespray repository from GitHub:
 
 ```bash
-git clone https://github.com/akbarmohammadi70/K8S_PostgresqlCluster_Nginx.git
-cd 01-kubespray
+git clone https://github.com/kubernetes-sigs/kubespray.git
+cd kubespray
 ```
 
 ### Step 2: Install Dependencies
