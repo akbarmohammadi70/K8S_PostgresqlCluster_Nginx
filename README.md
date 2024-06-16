@@ -102,7 +102,7 @@ all:
 To start the Kubernetes installation, run the playbook using the ansible-playbook command:
 
 ```bash
-ansible-playbook -i inventory/mycluster/inventory.ini --become --become-user=root cluster.yml
+ansible-playbook -i inventory/mycluster/hosts.yaml --become --become-user=root cluster.yml
 ```
 
 ### Step 5: Access the Cluster
